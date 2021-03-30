@@ -1,0 +1,47 @@
+`define addr_width 19
+module ram_control(
+input clk;
+input reset;
+
+);
+//计数器，记录ram当前读写地址
+wire [`addr_width-1:0] addr_r;
+wire [`addr_width-1:0] addr_next;
+wire addr_ena;
+sirv_gnrl_dfflr #(addr_width) muldiv_s
+
+
+
+
+//状态机，控制RAM实现环形缓冲
+//ram 2MB 每1MB为一块
+//写入16bit
+//读出64bit，后接4个16位FIFO
+localparam rw_width = 1;
+localparam rw_state_0th=1'b0;//写前1mb
+localparam rw_state_1th=1'b1;//写后1mb
+
+//控制状态转移的寄存器
+wire [rw_width-1:0] state_r;
+wire state_ena;
+assign state_ena=state_0th_ex_ena
+                |state_1th_ex_ena;
+wire [rw_width-1:0] state_next;
+assign state_next=({rw_width{state_0th_ex_ena}} &state_0th_next)
+					  |({rw_width{state_1th_ex_ena}} &state_1th_next);
+				  
+sirv_gnrl_dfflr #(rw_width) muldiv_state_dfflr (state_ena, state_next, state_r, clk, reset);					  
+
+//状态0
+wire state_is_0th=(state_r==rw_state_0th);
+wire [rw_width-1:0] state_0th_next;
+wire state_0th_ex_ena;
+assign state_0th_next=rw_state_1th;
+assign state_oth_ex_ena=(
+
+//状态1
+wire state_is_1th=(state_r==re_state_1th);
+wire [rw_width-1:0] state_1th_next;
+wire state_1th_ex_ena;
+assign state_1th_next=rw_state_0th;
+assign state_1th_ex_ena=

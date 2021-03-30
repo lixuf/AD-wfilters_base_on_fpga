@@ -1,0 +1,4 @@
+module top_xiaobao(
+input clk;
+input reset
+);
