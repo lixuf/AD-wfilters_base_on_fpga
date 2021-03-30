@@ -28,12 +28,12 @@ assign addr_ena=w_vaild;
 
 //与ram
 ramip ramip_xuhuan(
-	.(clock)clk,
-	.(data)wdata,
-	.(rdaddress)addr_r_r,
-	.(wraddress)addr_r,
-	.(wren)w_vaild,
-	.(q)rdata
+	.clock(clk),
+	.data(wdata),
+	.rdaddress(addr_r_r),
+	.wraddress(addr_r),
+	.wren(w_vaild),
+	.q(rdata)
 	);
 	
 	
