@@ -62,3 +62,21 @@ set_global_assignment -name QIP_FILE ../stl/fifoip.qip
 set_global_assignment -name VERILOG_FILE ../stl/top_xiaobo.v
 set_global_assignment -name VERILOG_FILE ../sim/testbench.v
 set_global_assignment -name QIP_FILE ../stl/pllip.qip
+set_global_assignment -name VERILOG_FILE ../stl/clk_gen.v
+set_global_assignment -name VERILOG_FILE ../stl/out_fifo.v
+set_global_assignment -name VERILOG_FILE ../stl/gen_defines.v
+set_global_assignment -name QIP_FILE ../stl/fifoip_64.qip
+set_global_assignment -name QIP_FILE ../stl/fifo_64_fe.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE ../gen/sirv_gnrl_dffs.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testbench -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE ../sim/testbench.v -section_id testbench
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

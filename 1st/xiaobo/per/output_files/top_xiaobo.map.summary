@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 31 15:55:51 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : top_xiaobo
+Top-level Entity Name : top_xiaobo
+Family : Cyclone IV E
+Total logic elements : 205
+    Total combinational functions : 200
+    Dedicated logic registers : 50
+Total registers : 50
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 524,672
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
