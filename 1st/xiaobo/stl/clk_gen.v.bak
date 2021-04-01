@@ -1,0 +1,18 @@
+module clk_gen(
+input clk_in,
+input reset_in,
+output clk,
+output reset
+);
+
+//pll 50到100
+wire locked;
+wire clk_100;
+wire clk;
+pllip pllip_real(
+	.areset(~reset),
+	.inclk0(clk_50),
+	.c0(clk_100),
+	.locked(locked)
+	);
+assign clk=clk_100&locked;

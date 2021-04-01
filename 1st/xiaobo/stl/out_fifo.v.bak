@@ -1,0 +1,10 @@
+module out_fifo(
+output r_o_vaild;
+input r_o_ready;
+input rdata;
+
+input clk;
+input reset
+);
+
+//fifo
