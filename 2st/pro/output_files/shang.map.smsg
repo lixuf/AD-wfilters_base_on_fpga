@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at clk_manger.v(20): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/ram2_1/rtl/clk_manger.v Line: 20

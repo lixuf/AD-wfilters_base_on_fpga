@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/ram2_1/rtl {C:/intelFPGA_lite/workary/ram2_1/rtl/fifoip_50_150.v}
+

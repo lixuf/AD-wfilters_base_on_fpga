@@ -1,0 +1,323 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/workary/ram2_1/pre/simulation/modelsim
+vad7606
+Z1 !s110 1617540965
+!i10b 1
+!s100 j5Oh;JEQ]<zLUi9Pe;G3L2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6Bl`:<76CnVe0kg35^XSJ0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1617539791
+8C:/intelFPGA_lite/workary/ram2_1/rtl/ad7606.v
+FC:/intelFPGA_lite/workary/ram2_1/rtl/ad7606.v
+!i122 1
+L0 5 236
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1617540965.000000
+!s107 C:/intelFPGA_lite/workary/ram2_1/rtl/ad7606.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/rtl|C:/intelFPGA_lite/workary/ram2_1/rtl/ad7606.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/ram2_1/rtl
+Z8 tCvgOpt 0
+vclk_manger
+Z9 !s110 1617540966
+!i10b 1
+!s100 PGP=?_1dTz5NboOh8Ud;e2
+R2
+I7dmA14;HEKh14DHEcY`jz2
+R3
+R0
+w1617536609
+8C:/intelFPGA_lite/workary/ram2_1/rtl/clk_manger.v
+FC:/intelFPGA_lite/workary/ram2_1/rtl/clk_manger.v
+!i122 3
+L0 1 82
+R4
+r1
+!s85 0
+31
+Z10 !s108 1617540966.000000
+!s107 C:/intelFPGA_lite/workary/ram2_1/rtl/clk_manger.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/rtl|C:/intelFPGA_lite/workary/ram2_1/rtl/clk_manger.v|
+!i113 1
+R6
+R7
+R8
+vfifoip_50_150
+R9
+!i10b 1
+!s100 cBMYKMHmfDlE:OMW]4c8m2
+R2
+IQAD]dDV5ZFjXTZz3dRbH<2
+R3
+R0
+w1617525758
+8C:/intelFPGA_lite/workary/ram2_1/rtl/fifoip_50_150.v
+FC:/intelFPGA_lite/workary/ram2_1/rtl/fifoip_50_150.v
+!i122 4
+L0 41 67
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/workary/ram2_1/rtl/fifoip_50_150.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/rtl|C:/intelFPGA_lite/workary/ram2_1/rtl/fifoip_50_150.v|
+!i113 1
+R6
+R7
+R8
+vpllip
+R9
+!i10b 1
+!s100 eOOSbGBCBTW2_4a7zL4^I1
+R2
+IlNVTc_oRHT]c6]mAVRk=T2
+R3
+R0
+w1617527940
+8C:/intelFPGA_lite/workary/ram2_1/rtl/pllip.v
+FC:/intelFPGA_lite/workary/ram2_1/rtl/pllip.v
+!i122 5
+L0 40 140
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/workary/ram2_1/rtl/pllip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/rtl|C:/intelFPGA_lite/workary/ram2_1/rtl/pllip.v|
+!i113 1
+R6
+R7
+R8
+vpllip_altpll
+R9
+!i10b 1
+!s100 OnbeZ2bF27?aJ>4a7A^i11
+R2
+IjU;JBnh1VgOzizZSZVdKE1
+R3
+R0
+w1617537022
+8C:/intelFPGA_lite/workary/ram2_1/pre/db/pllip_altpll.v
+FC:/intelFPGA_lite/workary/ram2_1/pre/db/pllip_altpll.v
+!i122 6
+L0 31 87
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/workary/ram2_1/pre/db/pllip_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/pre/db|C:/intelFPGA_lite/workary/ram2_1/pre/db/pllip_altpll.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/ram2_1/pre/db
+R8
+vsirv_gnrl_dffl
+R1
+!i10b 1
+!s100 h6SM`MQ8MoGFOm4[DL;AX1
+R2
+IMoF=i2]AiaK;cWe>Qf9Jg3
+R3
+R0
+Z11 w1617177606
+Z12 8C:/intelFPGA_lite/workary/ram2_1/gen/sirv_gnrl_dffs.v
+Z13 FC:/intelFPGA_lite/workary/ram2_1/gen/sirv_gnrl_dffs.v
+!i122 0
+L0 72 24
+R4
+r1
+!s85 0
+31
+R5
+Z14 !s107 C:/intelFPGA_lite/workary/ram2_1/gen/sirv_gnrl_dffs.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/gen|C:/intelFPGA_lite/workary/ram2_1/gen/sirv_gnrl_dffs.v|
+!i113 1
+R6
+Z16 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/ram2_1/gen
+R8
+vsirv_gnrl_dfflr
+R1
+!i10b 1
+!s100 ::ko<JlYknliXRO^LBa<f2
+R2
+IabH9CU9W6I50S8]^k6VX41
+R3
+R0
+R11
+R12
+R13
+!i122 0
+L0 37 28
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+R16
+R8
+vsirv_gnrl_dfflrs
+R1
+!i10b 1
+!s100 ba3gIK:84T2;naWn53I7;2
+R2
+IcH^khGed4GC^IciRN`O@J1
+R3
+R0
+R11
+R12
+R13
+!i122 0
+L0 2 27
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+R16
+R8
+vsirv_gnrl_dffr
+R1
+!i10b 1
+!s100 7W_`dG?zUO:cam:LeWA_H2
+R2
+IQCJPZ=H4V>PaMQX9j>o211
+R3
+R0
+R11
+R12
+R13
+!i122 0
+L0 136 24
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+R16
+R8
+vsirv_gnrl_dffrs
+R1
+!i10b 1
+!s100 aR1o^:4iCXY@3g?S<U2ah3
+R2
+I1L2ffcfQ9[lLcocZL97DA2
+R3
+R0
+R11
+R12
+R13
+!i122 0
+L0 104 24
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+R16
+R8
+vsirv_gnrl_ltch
+R1
+!i10b 1
+!s100 4TVh<c3m36b99XlZ_Hn5:1
+R2
+I83UmE__bZ>gQbJG>eobLT3
+R3
+R0
+R11
+R12
+R13
+!i122 0
+L0 167 25
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+R16
+R8
+vtestbench
+R9
+!i10b 1
+!s100 :f`HXF_lgGI9j9[aZAQYm0
+R2
+IXaDYEz3T27_^ST??K^0;C1
+R3
+R0
+w1617540948
+8C:/intelFPGA_lite/workary/ram2_1/pre/../sim/testbench.v
+FC:/intelFPGA_lite/workary/ram2_1/pre/../sim/testbench.v
+!i122 7
+L0 4 97
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/intelFPGA_lite/workary/ram2_1/pre/../sim/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/pre/../sim|C:/intelFPGA_lite/workary/ram2_1/pre/../sim/testbench.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/ram2_1/pre/../sim
+R8
+vtop
+R9
+!i10b 1
+!s100 gIYnJZPzh4:?7e:7MT0<?3
+R2
+IA:Xl2In7la[jBWEZOM;?:1
+R3
+R0
+w1617540901
+8C:/intelFPGA_lite/workary/ram2_1/rtl/top.v
+FC:/intelFPGA_lite/workary/ram2_1/rtl/top.v
+!i122 2
+L0 1 93
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/intelFPGA_lite/workary/ram2_1/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/ram2_1/rtl|C:/intelFPGA_lite/workary/ram2_1/rtl/top.v|
+!i113 1
+R6
+R7
+R8
