@@ -1,0 +1,72 @@
+/*地址产生模块*/
+module addr_fetch(
+   input reset,
+	input clk,
+	
+	input rd_addr_up,//地址自增信号，来自mem brush
+	input wr_addr_up,//严格控制 自增时才为1
+	
+	input frist_block,//表示刚刚开始写，等该信号为1才可开始读
+	
+ 	output [24:0] rd_addr,
+	output [24:0] wr_addr,
+	output reg read_en
+);
+//复位
+reg updata_addr;
+reg [18:0] rd_addr_t;//2MB最小寻址单位是4B，共19位
+reg [18:0] wr_addr_t;
+assign rd_addr={5'b0,rd_addr_t};
+assign wr_addr={5'b0,wr_addr_t};
+always @(posedge clk or negedge reset)
+begin 
+ if(~reset)
+ begin 
+  rd_addr_t<=19'b0;
+  wr_addr_t<=19'b0;
+ end
+ else if(updata_addr&read_en)//当rd addr未即时取完该块则需要舍弃后面的数据
+ begin
+  wr_addr_t<=wr_addr_t+{22'b0,wr_addr_up,2'b0};
+  rd_addr_t<={22'b0,~wr_addr_t[18],18'b0};
+ end
+ else
+ begin
+  rd_addr_t<=rd_addr_t+{22'b0,rd_addr_up&read_en,2'b0};
+  wr_addr_t<=wr_addr_t+{22'b0,wr_addr_up,2'b0};
+ end
+end
+
+
+
+wire addr_hi_xor=(rd_addr_t[18]^wr_addr_t[18]);
+wire n_frist_block=(~frist_block);
+//read_en信号
+//读使能信号，当读完一块下一块还未加载完毕-》子集（当刚刚开始时候）
+always@(posedge clk or negedge reset)
+begin 
+ if(~reset)
+ begin
+    read_en<=1'b0;
+ end
+ else
+ begin
+  read_en<=(addr_hi_xor)&n_frist_block;
+ end
+end
+
+
+//updata addr信号
+always@(posedge clk or negedge reset)
+begin 
+ if(~reset)
+ begin
+  updata_addr<=1'b0;
+ end
+ else
+ begin
+  updata_addr<=~(addr_hi_xor)&n_frist_block;
+ end
+end
+
+endmodule
