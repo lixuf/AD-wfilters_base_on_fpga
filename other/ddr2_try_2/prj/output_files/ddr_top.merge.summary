@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Mon Apr 12 14:44:54 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : ddr_top
+Top-level Entity Name : top
+Family : Cyclone IV E
+Total logic elements : 6,594
+    Total combinational functions : 5,186
+    Dedicated logic registers : 3,601
+Total registers : 3693
+Total pins : 156
+Total virtual pins : 0
+Total memory bits : 14,944
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

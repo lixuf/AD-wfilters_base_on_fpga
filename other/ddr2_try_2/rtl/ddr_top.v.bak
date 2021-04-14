@@ -1,0 +1,39 @@
+module ddr2_top
+#(
+	parameter MEM_DATA_BITS = 32,
+	parameter ADDR_BITS = 25,
+	parameter LOCAL_SIZE_BITS = 3
+)
+(
+	input rst_n,                                 /*复位*/
+	input mem_clk,                               /*接口时钟*/
+	input rd_burst_req,                          /*读请求*/
+	input wr_burst_req,                          /*写请求*/
+	input[9:0] rd_burst_len,                     /*读数据长度*/
+	input[9:0] wr_burst_len,                     /*写数据长度*/
+	input[ADDR_BITS - 1:0] rd_burst_addr,        /*读首地址*/
+	input[ADDR_BITS - 1:0] wr_burst_addr,        /*写首地址*/
+	output rd_burst_data_valid,                  /*读出数据有效*/
+	output wr_burst_data_req,                    /*写数据信号*/
+	output[MEM_DATA_BITS - 1:0] rd_burst_data,   /*读出的数据*/
+	input[MEM_DATA_BITS - 1:0] wr_burst_data,    /*写入的数据*/
+	output rd_burst_finish,                      /*读完成*/
+	output wr_burst_finish,                      /*写完成*/
+	output burst_finish,                         /*读或写完成*/
+
+	///////////////////
+	/*一下是altera ddr2 IP的接口，可参考altera相关文档*/
+	input local_init_done,
+	output ddr_rst_n,
+	input local_ready,
+	output  local_burstbegin,
+	output[MEM_DATA_BITS - 1:0] local_wdata,
+	input local_rdata_valid,
+	input[MEM_DATA_BITS - 1:0] local_rdata,
+	output  local_write_req,
+	output  local_read_req,
+	output reg[23:0] local_address,
+	output[MEM_DATA_BITS/8 - 1:0] local_be,
+	output reg[LOCAL_SIZE_BITS - 1:0] local_size,
+
+);
