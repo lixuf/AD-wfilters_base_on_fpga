@@ -1,0 +1,30 @@
+module testbench;
+reg clk;
+reg reset;
+reg ad_data;
+reg ad_busy;
+reg first_data;
+reg start;
+
+//test
+wire empty;
+wire full;
+wire [15:0] data_ar;
+reg rdreq_ar;
+wire clk_50_0;
+wire clk_50_90;
+wire clk_150_90;
+wire clk_150_0;
+wire reset_1_50_0;
+wire reset_1_50_90;
+
+
+initial begin
+clk<=1'b0;
+reset<=1'b0;;
+ad_data<=1'b0;
+ad_busy<=1'b0;;
+first_data<=1'b0;;
+start<=1'b0;
+rdreq_ar=1'b0;
+end
