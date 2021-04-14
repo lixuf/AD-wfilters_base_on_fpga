@@ -1,0 +1,554 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		1.8V
+ --					Bank 4:		1.8V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "try_ddr"  ASSIGNED TO AN: EP4CE15F23C8
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+local_rdata[25]              : A4        : output : 2.5 V             :         : 8         : N              
+local_rdata[30]              : A5        : output : 2.5 V             :         : 8         : N              
+local_rdata[4]               : A6        : output : 2.5 V             :         : 8         : N              
+local_rdata[14]              : A7        : output : 2.5 V             :         : 8         : N              
+local_rdata[31]              : A8        : output : 2.5 V             :         : 8         : N              
+local_rdata[21]              : A9        : output : 2.5 V             :         : 8         : N              
+ad_ch[21]                    : A10       : output : 2.5 V             :         : 8         : N              
+GND+                         : A11       :        :                   :         : 8         :                
+GND+                         : A12       :        :                   :         : 7         :                
+local_wdata[25]              : A13       : output : 2.5 V             :         : 7         : N              
+data_out[11]                 : A14       : output : 2.5 V             :         : 7         : N              
+data_out[25]                 : A15       : output : 2.5 V             :         : 7         : N              
+rd_addr[7]                   : A16       : output : 2.5 V             :         : 7         : N              
+data_out[14]                 : A17       : output : 2.5 V             :         : 7         : N              
+rd_addr[8]                   : A18       : output : 2.5 V             :         : 7         : N              
+rd_addr[6]                   : A19       : output : 2.5 V             :         : 7         : N              
+data_out[29]                 : A20       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A21       : power  :                   : 2.5V    : 7         :                
+GND                          : A22       : gnd    :                   :         :           :                
+ad_os[0]                     : AA1       : output : 2.5 V             :         : 2         : Y              
+GND                          : AA2       : gnd    :                   :         :           :                
+mem_we_n                     : AA3       : output : SSTL-18 Class I   :         : 3         : Y              
+mem_ras_n                    : AA4       : output : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[15]                   : AA5       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+VCCIO3                       : AA6       : power  :                   : 1.8V    : 3         :                
+mem_dm[0]                    : AA7       : output : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[7]                    : AA8       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[2]                    : AA9       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
+GND+                         : AA11      :        :                   :         : 3         :                
+GND+                         : AA12      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4         :                
+mem_clk[0]                   : AA17      : bidir  : SSTL-18 Class I   :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA18      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA20      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5         :                
+GND                          : AA22      : gnd    :                   :         :           :                
+GND                          : AB1       : gnd    :                   :         :           :                
+VCCIO3                       : AB2       : power  :                   : 1.8V    : 3         :                
+mem_cke[0]                   : AB3       : output : SSTL-18 Class I   :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 3         :                
+mem_odt[0]                   : AB5       : output : SSTL-18 Class I   :         : 3         : Y              
+GND                          : AB6       : gnd    :                   :         :           :                
+mem_dq[6]                    : AB7       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[0]                    : AB8       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dqs[0]                   : AB9       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_cas_n                    : AB10      : output : SSTL-18 Class I   :         : 3         : Y              
+GND+                         : AB11      :        :                   :         : 3         :                
+GND+                         : AB12      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 4         :                
+mem_clk_n[0]                 : AB17      : bidir  : SSTL-18 Class I   :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4         :                
+VCCIO4                       : AB21      : power  :                   : 1.8V    : 4         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
+ad_ch[27]                    : B2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+data_out[5]                  : B5        : output : 2.5 V             :         : 8         : N              
+local_rdata[18]              : B6        : output : 2.5 V             :         : 8         : N              
+local_rdata[0]               : B7        : output : 2.5 V             :         : 8         : N              
+local_rdata[8]               : B8        : output : 2.5 V             :         : 8         : N              
+local_rdata[24]              : B9        : output : 2.5 V             :         : 8         : N              
+local_rdata[12]              : B10       : output : 2.5 V             :         : 8         : N              
+GND+                         : B11       :        :                   :         : 8         :                
+GND+                         : B12       :        :                   :         : 7         :                
+local_wdata[21]              : B13       : output : 2.5 V             :         : 7         : N              
+data_out[4]                  : B14       : output : 2.5 V             :         : 7         : N              
+data_out[22]                 : B15       : output : 2.5 V             :         : 7         : N              
+local_size[0]                : B16       : output : 2.5 V             :         : 7         : N              
+rd_addr[22]                  : B17       : output : 2.5 V             :         : 7         : N              
+read_en                      : B18       : output : 2.5 V             :         : 7         : N              
+reset                        : B19       : input  : 2.5 V             :         : 7         : Y              
+phy_clk                      : B20       : output : 2.5 V             :         : 7         : N              
+rd_addr[17]                  : B21       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 1         :                
+ad_ch[5]                     : C2        : output : 2.5 V             :         : 1         : N              
+local_rdata[16]              : C3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+local_rdata[22]              : C7        : output : 2.5 V             :         : 8         : N              
+local_rdata[7]               : C8        : output : 2.5 V             :         : 8         : N              
+GND                          : C9        : gnd    :                   :         :           :                
+local_rdata[2]               : C10       : output : 2.5 V             :         : 8         : N              
+GND                          : C11       : gnd    :                   :         :           :                
+GND                          : C12       : gnd    :                   :         :           :                
+data_out[26]                 : C13       : output : 2.5 V             :         : 7         : N              
+GND                          : C14       : gnd    :                   :         :           :                
+data_out[7]                  : C15       : output : 2.5 V             :         : 7         : N              
+GND                          : C16       : gnd    :                   :         :           :                
+local_wdata[29]              : C17       : output : 2.5 V             :         : 7         : N              
+GND                          : C18       : gnd    :                   :         :           :                
+local_address[24]            : C19       : output : 2.5 V             :         : 7         : N              
+rd_addr[0]                   : C20       : output : 2.5 V             :         : 6         : N              
+ad_ch[23]                    : C21       : output : 2.5 V             :         : 6         : N              
+rd_addr[12]                  : C22       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 1         : N              
+ad_ch[26]                    : D2        : output : 2.5 V             :         : 1         : N              
+GND                          : D3        : gnd    :                   :         :           :                
+VCCIO1                       : D4        : power  :                   : 2.5V    : 1         :                
+VCCIO8                       : D5        : power  :                   : 2.5V    : 8         :                
+ad_ch[31]                    : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+GND                          : D8        : gnd    :                   :         :           :                
+VCCIO8                       : D9        : power  :                   : 2.5V    : 8         :                
+data_out[18]                 : D10       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : D11       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : D12       : power  :                   : 2.5V    : 7         :                
+local_wdata[4]               : D13       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : D14       : power  :                   : 2.5V    : 7         :                
+ad_ch[25]                    : D15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : D16       : power  :                   : 2.5V    : 7         :                
+ad_ch[17]                    : D17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : D18       : power  :                   : 2.5V    : 7         :                
+rd_addr[4]                   : D19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 6         :                
+ad_ch[29]                    : D21       : output : 2.5 V             :         : 6         : N              
+local_address[3]             : D22       : output : 2.5 V             :         : 6         : N              
+local_address[0]             : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+rd_addr[1]                   : E3        : output : 2.5 V             :         : 1         : N              
+data_out[15]                 : E4        : output : 2.5 V             :         : 1         : N              
+rd_addr[21]                  : E5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
+local_rdata[17]              : E9        : output : 2.5 V             :         : 8         : N              
+local_wdata[11]              : E10       : output : 2.5 V             :         : 8         : N              
+local_wdata[10]              : E11       : output : 2.5 V             :         : 7         : N              
+data_out[21]                 : E12       : output : 2.5 V             :         : 7         : N              
+data_flag                    : E13       : output : 2.5 V             :         : 7         : N              
+local_wdata[7]               : E14       : output : 2.5 V             :         : 7         : N              
+local_read_req               : E15       : output : 2.5 V             :         : 7         : N              
+rd_addr[24]                  : E16       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : E17       : power  :                   : 1.2V    :           :                
+GNDA2                        : E18       : gnd    :                   :         :           :                
+VCCIO6                       : E19       : power  :                   : 2.5V    : 6         :                
+GND                          : E20       : gnd    :                   :         :           :                
+local_wdata[8]               : E21       : output : 2.5 V             :         : 6         : N              
+rd_addr[15]                  : E22       : output : 2.5 V             :         : 6         : N              
+ad_ch[3]                     : F1        : output : 2.5 V             :         : 1         : N              
+local_rdata[1]               : F2        : output : 2.5 V             :         : 1         : N              
+GND                          : F3        : gnd    :                   :         :           :                
+VCCIO1                       : F4        : power  :                   : 2.5V    : 1         :                
+GNDA3                        : F5        : gnd    :                   :         :           :                
+VCCD_PLL3                    : F6        : power  :                   : 1.2V    :           :                
+ad_ch[9]                     : F7        : output : 2.5 V             :         : 8         : N              
+ad_ch[22]                    : F8        : output : 2.5 V             :         : 8         : N              
+local_rdata[11]              : F9        : output : 2.5 V             :         : 8         : N              
+rd_addr[20]                  : F10       : output : 2.5 V             :         : 8         : N              
+data_out[10]                 : F11       : output : 2.5 V             :         : 7         : N              
+local_address[9]             : F12       : output : 2.5 V             :         : 7         : N              
+local_wdata[24]              : F13       : output : 2.5 V             :         : 7         : N              
+ad_ch[20]                    : F14       : output : 2.5 V             :         : 7         : N              
+ad_ch[28]                    : F15       : output : 2.5 V             :         : 7         : N              
+local_size[2]                : F16       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
+VCCA2                        : F18       : power  :                   : 2.5V    :           :                
+rd_addr[2]                   : F19       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 6         :                
+rd_addr[10]                  : F21       : output : 2.5 V             :         : 6         : N              
+rd_addr[9]                   : F22       : output : 2.5 V             :         : 6         : N              
+GND+                         : G1        :        :                   :         : 1         :                
+GND                          : G2        : gnd    :                   :         :           :                
+local_rdata[5]               : G3        : output : 2.5 V             :         : 1         : N              
+local_wdata[15]              : G4        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+VCCA3                        : G6        : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+local_rdata[28]              : G8        : output : 2.5 V             :         : 8         : N              
+local_wdata[5]               : G9        : output : 2.5 V             :         : 8         : N              
+local_rdata[23]              : G10       : output : 2.5 V             :         : 8         : N              
+local_rdata[13]              : G11       : output : 2.5 V             :         : 8         : N              
+local_wdata[26]              : G12       : output : 2.5 V             :         : 7         : N              
+local_wdata[14]              : G13       : output : 2.5 V             :         : 7         : N              
+local_wdata_req              : G14       : output : 2.5 V             :         : 7         : N              
+ad_ch[19]                    : G15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 7         :                
+ad_ch[16]                    : G17       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
+VCCIO6                       : G19       : power  :                   : 2.5V    : 6         :                
+GND                          : G20       : gnd    :                   :         :           :                
+GND+                         : G21       :        :                   :         : 6         :                
+GND+                         : G22       :        :                   :         : 6         :                
+ad_ch[6]                     : H1        : output : 2.5 V             :         : 1         : N              
+ad_ch[10]                    : H2        : output : 2.5 V             :         : 1         : N              
+GND                          : H3        : gnd    :                   :         :           :                
+VCCIO1                       : H4        : power  :                   : 2.5V    : 1         :                
+rd_addr[19]                  : H5        : output : 2.5 V             :         : 1         : N              
+ad_ch[15]                    : H6        : output : 2.5 V             :         : 1         : N              
+ad_ch[0]                     : H7        : output : 2.5 V             :         : 1         : N              
+GND                          : H8        : gnd    :                   :         :           :                
+ad_ch[30]                    : H9        : output : 2.5 V             :         : 8         : N              
+local_rdata[20]              : H10       : output : 2.5 V             :         : 8         : N              
+local_wdata[18]              : H11       : output : 2.5 V             :         : 8         : N              
+data_out[24]                 : H12       : output : 2.5 V             :         : 7         : N              
+local_wdata[22]              : H13       : output : 2.5 V             :         : 7         : N              
+local_address[6]             : H14       : output : 2.5 V             :         : 7         : N              
+rd_addr[3]                   : H15       : output : 2.5 V             :         : 7         : N              
+write_fifo                   : H16       : output : 2.5 V             :         : 6         : N              
+local_rdata_valid            : H17       : output : 2.5 V             :         : 6         : N              
+rd_addr[18]                  : H18       : output : 2.5 V             :         : 6         : N              
+data_out[8]                  : H19       : output : 2.5 V             :         : 6         : N              
+rd_addr_up                   : H20       : output : 2.5 V             :         : 6         : N              
+local_wdata[9]               : H21       : output : 2.5 V             :         : 6         : N              
+local_address[4]             : H22       : output : 2.5 V             :         : 6         : N              
+ad_ch[12]                    : J1        : output : 2.5 V             :         : 1         : N              
+local_rdata[29]              : J2        : output : 2.5 V             :         : 1         : N              
+local_rdata[27]              : J3        : output : 2.5 V             :         : 1         : N              
+ad_ch[8]                     : J4        : output : 2.5 V             :         : 1         : N              
+GND                          : J5        : gnd    :                   :         :           :                
+ad_ch[2]                     : J6        : output : 2.5 V             :         : 1         : N              
+ad_ch[11]                    : J7        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : J8        : power  :                   : 1.2V    :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+VCCINT                       : J14       : power  :                   : 1.2V    :           :                
+rd_addr[11]                  : J15       : output : 2.5 V             :         : 6         : N              
+local_address[5]             : J16       : output : 2.5 V             :         : 6         : N              
+rd_addr[5]                   : J17       : output : 2.5 V             :         : 6         : N              
+rd_addr[16]                  : J18       : output : 2.5 V             :         : 6         : N              
+GND                          : J19       : gnd    :                   :         :           :                
+VCCIO6                       : J20       : power  :                   : 2.5V    : 6         :                
+rd_addr[14]                  : J21       : output : 2.5 V             :         : 6         : N              
+local_init_done              : J22       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : K2        : output : 2.5 V             :         : 1         : N              
+GND                          : K3        : gnd    :                   :         :           :                
+VCCIO1                       : K4        : power  :                   : 2.5V    : 1         :                
+nCONFIG                      : K5        :        :                   :         : 1         :                
+nSTATUS                      : K6        :        :                   :         : 1         :                
+ad_ch[14]                    : K7        : output : 2.5 V             :         : 1         : N              
+ad_ch[1]                     : K8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCINT                       : K14       : power  :                   : 1.2V    :           :                
+local_address[20]            : K15       : output : 2.5 V             :         : 6         : N              
+local_address[7]             : K16       : output : 2.5 V             :         : 6         : N              
+wr_addr_up                   : K17       : output : 2.5 V             :         : 6         : N              
+data_out[9]                  : K18       : output : 2.5 V             :         : 6         : N              
+local_address[8]             : K19       : output : 2.5 V             :         : 6         : N              
+MSEL3                        : K20       :        :                   :         : 6         :                
+rd_addr[13]                  : K21       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : K22       : output : 2.5 V             :         : 6         : N              
+altera_reserved_tms          : L1        : input  : 2.5 V             :         : 1         : N              
+altera_reserved_tck          : L2        : input  : 2.5 V             :         : 1         : N              
+nCE                          : L3        :        :                   :         : 1         :                
+altera_reserved_tdo          : L4        : output : 2.5 V             :         : 1         : N              
+altera_reserved_tdi          : L5        : input  : 2.5 V             :         : 1         : N              
+local_rdata[15]              : L6        : output : 2.5 V             :         : 2         : N              
+local_wdata[0]               : L7        : output : 2.5 V             :         : 2         : N              
+ad_ch[13]                    : L8        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+local_wdata[12]              : L15       : output : 2.5 V             :         : 6         : N              
+data_out[27]                 : L16       : output : 2.5 V             :         : 6         : N              
+MSEL2                        : L17       :        :                   :         : 6         :                
+MSEL1                        : L18       :        :                   :         : 6         :                
+VCCIO6                       : L19       : power  :                   : 2.5V    : 6         :                
+GND                          : L20       : gnd    :                   :         :           :                
+local_address[18]            : L21       : output : 2.5 V             :         : 6         : N              
+local_wdata[19]              : L22       : output : 2.5 V             :         : 6         : N              
+local_rdata[6]               : M1        : output : 2.5 V             :         : 2         : N              
+local_rdata[10]              : M2        : output : 2.5 V             :         : 2         : N              
+ad_ch[4]                     : M3        : output : 2.5 V             :         : 2         : N              
+local_wdata[20]              : M4        : output : 2.5 V             :         : 2         : N              
+ad_data[15]                  : M5        : input  : 2.5 V             :         : 2         : Y              
+local_rdata[9]               : M6        : output : 2.5 V             :         : 2         : N              
+local_wdata[17]              : M7        : output : 2.5 V             :         : 2         : N              
+data_out[20]                 : M8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+local_wdata[13]              : M15       : output : 2.5 V             :         : 5         : N              
+local_write_req              : M16       : output : 2.5 V             :         : 5         : N              
+MSEL0                        : M17       :        :                   :         : 6         :                
+CONF_DONE                    : M18       :        :                   :         : 6         :                
+local_size[1]                : M19       : output : 2.5 V             :         : 5         : N              
+local_wdata[28]              : M20       : output : 2.5 V             :         : 5         : N              
+data_out[28]                 : M21       : output : 2.5 V             :         : 5         : N              
+local_address[2]             : M22       : output : 2.5 V             :         : 5         : N              
+local_rdata[19]              : N1        : output : 2.5 V             :         : 2         : N              
+local_rdata[3]               : N2        : output : 2.5 V             :         : 2         : N              
+GND                          : N3        : gnd    :                   :         :           :                
+VCCIO2                       : N4        : power  :                   : 2.5V    : 2         :                
+ad_data[13]                  : N5        : input  : 2.5 V             :         : 2         : Y              
+local_wdata[2]               : N6        : output : 2.5 V             :         : 2         : N              
+rd_addr[23]                  : N7        : output : 2.5 V             :         : 2         : N              
+data_out[0]                  : N8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+local_address[19]            : N14       : output : 2.5 V             :         : 5         : N              
+local_address[12]            : N15       : output : 2.5 V             :         : 5         : N              
+local_wdata[16]              : N16       : output : 2.5 V             :         : 5         : N              
+data_out[13]                 : N17       : output : 2.5 V             :         : 5         : N              
+local_rdata[26]              : N18       : output : 2.5 V             :         : 5         : N              
+data_out[31]                 : N19       : output : 2.5 V             :         : 5         : N              
+local_wdata[3]               : N20       : output : 2.5 V             :         : 5         : N              
+local_burstbegin             : N21       : output : 2.5 V             :         : 5         : N              
+rd_fifo_req                  : N22       : output : 2.5 V             :         : 5         : N              
+ad_data[10]                  : P1        : input  : 2.5 V             :         : 2         : Y              
+ad_data[9]                   : P2        : input  : 2.5 V             :         : 2         : Y              
+ad_data[8]                   : P3        : input  : 2.5 V             :         : 2         : Y              
+ad_data[5]                   : P4        : input  : 2.5 V             :         : 2         : Y              
+ad_data[4]                   : P5        : input  : 2.5 V             :         : 2         : Y              
+ad_data[12]                  : P6        : input  : 2.5 V             :         : 2         : Y              
+ad_ch[18]                    : P7        : output : 2.5 V             :         : 2         : N              
+local_wdata[23]              : P8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+ad_ch[24]                    : P14       : output : 2.5 V             :         : 5         : N              
+local_address[1]             : P15       : output : 2.5 V             :         : 5         : N              
+data_out[1]                  : P16       : output : 2.5 V             :         : 5         : N              
+data_out[16]                 : P17       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : P18       : power  :                   : 2.5V    : 5         :                
+GND                          : P19       : gnd    :                   :         :           :                
+local_address[14]            : P20       : output : 2.5 V             :         : 5         : N              
+data_out[3]                  : P21       : output : 2.5 V             :         : 5         : N              
+local_address[11]            : P22       : output : 2.5 V             :         : 5         : N              
+ad_data[7]                   : R1        : input  : 2.5 V             :         : 2         : Y              
+ad_data[6]                   : R2        : input  : 2.5 V             :         : 2         : Y              
+GND                          : R3        : gnd    :                   :         :           :                
+VCCIO2                       : R4        : power  :                   : 2.5V    : 2         :                
+ad_data[3]                   : R5        : input  : 2.5 V             :         : 2         : Y              
+ad_busy                      : R6        : input  : 2.5 V             :         : 2         : Y              
+ad_data[14]                  : R7        : input  : 2.5 V             :         : 2         : Y              
+data_out[23]                 : R8        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R12       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
+mem_addr[9]                  : R14       : output : SSTL-18 Class I   :         : 4         : Y              
+mem_addr[12]                 : R15       : output : SSTL-18 Class I   :         : 4         : Y              
+mem_addr[7]                  : R16       : output : SSTL-18 Class I   :         : 4         : Y              
+local_wdata[1]               : R17       : output : 2.5 V             :         : 5         : N              
+data_out[12]                 : R18       : output : 2.5 V             :         : 5         : N              
+local_address[13]            : R19       : output : 2.5 V             :         : 5         : N              
+local_wdata[30]              : R20       : output : 2.5 V             :         : 5         : N              
+local_wdata[27]              : R21       : output : 2.5 V             :         : 5         : N              
+local_wdata[31]              : R22       : output : 2.5 V             :         : 5         : N              
+GND+                         : T1        :        :                   :         : 2         :                
+GND+                         : T2        :        :                   :         : 2         :                
+ad_data[2]                   : T3        : input  : 2.5 V             :         : 2         : Y              
+ad_ch[7]                     : T4        : output : 2.5 V             :         : 2         : N              
+first_data                   : T5        : input  : 2.5 V             :         : 2         : Y              
+VCCA1                        : T6        : power  :                   : 2.5V    :           :                
+ad_data[11]                  : T7        : input  : 2.5 V             :         : 2         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
+mem_addr[11]                 : T9        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_addr[13]                 : T10       : output : SSTL-18 Class I   :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+mem_addr[3]                  : T14       : output : SSTL-18 Class I   :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+mem_addr[14]                 : T16       : output : SSTL-18 Class I   :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T18       :        :                   :         : 5         :                
+VCCIO5                       : T19       : power  :                   : 2.5V    : 5         :                
+GND                          : T20       : gnd    :                   :         :           :                
+clk_in                       : T21       : input  : 2.5 V             :         : 5         : Y              
+GND+                         : T22       :        :                   :         : 5         :                
+ad_data[1]                   : U1        : input  : 2.5 V             :         : 2         : Y              
+ad_data[0]                   : U2        : input  : 2.5 V             :         : 2         : Y              
+GND                          : U3        : gnd    :                   :         :           :                
+VCCIO2                       : U4        : power  :                   : 2.5V    : 2         :                
+GNDA1                        : U5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
+mem_addr[4]                  : U7        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_addr[6]                  : U8        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[9]                    : U9        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_addr[8]                  : U10       : output : SSTL-18 Class I   :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U11       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 4         :                
+mem_addr[1]                  : U13       : output : SSTL-18 Class I   :         : 4         : Y              
+mem_addr[10]                 : U14       : output : SSTL-18 Class I   :         : 4         : Y              
+mem_addr[5]                  : U15       : output : SSTL-18 Class I   :         : 4         : Y              
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+VCCA4                        : U18       : power  :                   : 2.5V    :           :                
+local_address[15]            : U19       : output : 2.5 V             :         : 5         : N              
+local_address[17]            : U20       : output : 2.5 V             :         : 5         : N              
+data_out[19]                 : U21       : output : 2.5 V             :         : 5         : N              
+data_out[30]                 : U22       : output : 2.5 V             :         : 5         : N              
+data_out[2]                  : V1        : output : 2.5 V             :         : 2         : N              
+data_out[17]                 : V2        : output : 2.5 V             :         : 2         : N              
+ad_os[2]                     : V3        : output : 2.5 V             :         : 2         : Y              
+ad_convstab                  : V4        : output : 2.5 V             :         : 2         : Y              
+mem_dm[1]                    : V5        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_addr[0]                  : V6        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_addr[2]                  : V7        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[10]                   : V8        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+VREFB3N0                     : V9        :        :                   : 0.9V    : 3         :                
+mem_dqs[1]                   : V10       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[4]                    : V11       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V12       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V13       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V14       :        :                   :         : 4         :                
+mem_ba[2]                    : V15       : output : SSTL-18 Class I   :         : 4         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V16       :        :                   :         : 4         :                
+VCCD_PLL4                    : V17       : power  :                   : 1.2V    :           :                
+GNDA4                        : V18       : gnd    :                   :         :           :                
+VCCIO5                       : V19       : power  :                   : 2.5V    : 5         :                
+GND                          : V20       : gnd    :                   :         :           :                
+local_address[10]            : V21       : output : 2.5 V             :         : 5         : N              
+local_address[22]            : V22       : output : 2.5 V             :         : 5         : N              
+ad_cs                        : W1        : output : 2.5 V             :         : 2         : Y              
+ad_reset                     : W2        : output : 2.5 V             :         : 2         : Y              
+GND                          : W3        : gnd    :                   :         :           :                
+VCCIO2                       : W4        : power  :                   : 2.5V    : 2         :                
+VCCIO3                       : W5        : power  :                   : 1.8V    : 3         :                
+mem_dq[11]                   : W6        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[12]                   : W7        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[13]                   : W8        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+VCCIO3                       : W9        : power  :                   : 1.8V    : 3         :                
+mem_dq[3]                    : W10       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+VCCIO3                       : W11       : power  :                   : 1.8V    : 3         :                
+VCCIO4                       : W12       : power  :                   : 1.8V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W13       :        :                   :         : 4         :                
+VREFB4N1                     : W14       :        :                   : 0.9V    : 4         :                
+mem_ba[1]                    : W15       : output : SSTL-18 Class I   :         : 4         : Y              
+VCCIO4                       : W16       : power  :                   : 1.8V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W17       :        :                   :         : 4         :                
+VCCIO4                       : W18       : power  :                   : 1.8V    : 4         :                
+local_wdata[6]               : W19       : output : 2.5 V             :         : 5         : N              
+local_address[16]            : W20       : output : 2.5 V             :         : 5         : N              
+local_address[21]            : W21       : output : 2.5 V             :         : 5         : N              
+data_out[6]                  : W22       : output : 2.5 V             :         : 5         : N              
+ad_rd                        : Y1        : output : 2.5 V             :         : 2         : Y              
+ad_os[1]                     : Y2        : output : 2.5 V             :         : 2         : Y              
+mem_dq[14]                   : Y3        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+VREFB3N1                     : Y4        :        :                   : 0.9V    : 3         :                
+GND                          : Y5        : gnd    :                   :         :           :                
+mem_cs_n[0]                  : Y6        : output : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[8]                    : Y7        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+mem_dq[1]                    : Y8        : bidir  : SSTL-18 Class I   :         : 3         : Y              
+GND                          : Y9        : gnd    :                   :         :           :                
+mem_dq[5]                    : Y10       : bidir  : SSTL-18 Class I   :         : 3         : Y              
+GND                          : Y11       : gnd    :                   :         :           :                
+GND                          : Y12       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 4         :                
+VCCIO4                       : Y14       : power  :                   : 1.8V    : 4         :                
+GND                          : Y15       : gnd    :                   :         :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+mem_ba[0]                    : Y17       : output : SSTL-18 Class I   :         : 4         : Y              
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO5                       : Y19       : power  :                   : 2.5V    : 5         :                
+GND                          : Y20       : gnd    :                   :         :           :                
+local_address[23]            : Y21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                
