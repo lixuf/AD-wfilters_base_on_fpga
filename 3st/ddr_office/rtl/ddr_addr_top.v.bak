@@ -1,0 +1,24 @@
+module ddr_addr_top(
+//gen
+input reset,
+input clk_50_0,
+output phy_clk,
+);
+
+wire [24:0] rd_addr;
+wire [24:0] wr_addr;
+wire read_en;//读准许信号，由于读完了一块下一块未写完
+addr_fetch(
+   .reset(reset),
+	.clk(clk_50_0),
+	
+	input rd_addr_up,//地址自增信号，来自mem brush
+	input wr_addr_up,//严格控制 自增时才为1
+	
+	//input frist_block,//表示刚刚开始写，等该信号为1才可开始读
+	
+ 	.rd_addr(rd_addr),
+	.wr_addr(wr_addr),
+	.read_en(read_en)
+	);
+	
