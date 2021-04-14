@@ -1,0 +1,69 @@
+# Reading pref.tcl
+# do cfifo_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/modsim/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {cfifo.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:15:06 on Apr 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." cfifo.vo 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 21:15:06 on Apr 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/dcfifo_try {C:/intelFPGA_lite/workary/dcfifo_try/testbench1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:15:06 on Apr 08,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/workary/dcfifo_try" C:/intelFPGA_lite/workary/dcfifo_try/testbench1.v 
+# -- Compiling module testbench1
+# 
+# Top level modules:
+# 	testbench1
+# End time: 21:15:07 on Apr 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  testbench1
+# vsim -t 1ps -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" testbench1 
+# Start time: 21:15:07 on Apr 08,2021
+# Loading work.testbench1
+# Loading work.top
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cycloneive PLL was reset
+# Time: 0  Instance: testbench1.top11.\plll|altpll_component|auto_generated|pll1 
+#  Note : Cycloneive PLL locked to incoming clock
+# Time: 90000  Instance: testbench1.top11.\plll|altpll_component|auto_generated|pll1 
+# Break key hit
+# Break in Module cycloneive_pll in file $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v
+# End time: 21:17:54 on Apr 08,2021, Elapsed time: 0:02:47
+# Errors: 0, Warnings: 0

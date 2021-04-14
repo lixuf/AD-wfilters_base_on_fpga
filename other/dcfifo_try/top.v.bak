@@ -1,0 +1,54 @@
+module top(
+input clk_50,
+input	aclr,
+	input data,
+	output rdclk,
+	input rdreq,
+	output wrclk,
+	input wrreq,
+	output q,
+	output rdempty,
+	output rdfull,
+	output rdusedw,
+	output wrempty,
+	output wrfull,
+	output wrusedw);
+);
+
+
+wire clk_50_90t;
+wire clk_150_0t;
+wire clk_150_90t;
+wire locked;
+
+pllip plll(
+	.areset(1'b0),
+	.inclk0(clk_50),
+	.c0(clk_50_90t),
+	.c1(clk_150_0t),
+	.c2(clk_150_90t),
+	.locked(locked)
+	);
+	
+wire clk_50_0=clk_50&locked;
+wire clk_50_90=clk_50_90t&locked;
+wire clk_150_0=clk_150_0t&locked;
+wire clk_150_90=clk_150_90t&locked;
+
+
+fifoip fifof(
+	.aclr(aclr),
+	.data(data_in),
+	.rdclk(clk_150_90),
+	.rdreq(rreq),
+	.wrclk(clk_50_90),
+	.wrreq(wreq),
+	.q(data_out),
+	.rdempty(rempty),
+	.rdfull(rfull),
+	.rdusedw(ruse),
+	.wrempty(wempty),
+	.wrfull(wfull),
+	.wrusedw(wuse)
+	);
+endmodule 

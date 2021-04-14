@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Apr 08 21:14:41 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : cfifo
+Top-level Entity Name : top
+Family : Cyclone IV E
+Device : EP4CE15F23C8
+Timing Models : Final
+Total logic elements : 68 / 15,408 ( < 1 % )
+    Total combinational functions : 54 / 15,408 ( < 1 % )
+    Dedicated logic registers : 55 / 15,408 ( < 1 % )
+Total registers : 55
+Total pins : 53 / 344 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 128 / 516,096 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

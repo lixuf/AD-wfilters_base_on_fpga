@@ -1,0 +1,131 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/workary/dcfifo_try/simulation/modelsim
+vfifoip
+!s110 1617886301
+!i10b 1
+!s100 3gWzI81bBzlYROgB5XmYL2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IMn[UM12UaT@e0[@9L6hcm3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1617880825
+8C:/intelFPGA_lite/workary/dcfifo_try/fifoip.v
+FC:/intelFPGA_lite/workary/dcfifo_try/fifoip.v
+!i122 0
+L0 40 83
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1617886301.000000
+!s107 C:/intelFPGA_lite/workary/dcfifo_try/fifoip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/dcfifo_try|C:/intelFPGA_lite/workary/dcfifo_try/fifoip.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/dcfifo_try
+Z7 tCvgOpt 0
+vpllip
+Z8 !s110 1617886302
+!i10b 1
+!s100 eOOSbGBCBTW2_4a7zL4^I1
+R1
+I5GC:1D6bLKKkA_g9O[i4<0
+R2
+R0
+w1617884797
+8C:/intelFPGA_lite/workary/dcfifo_try/pllip.v
+FC:/intelFPGA_lite/workary/dcfifo_try/pllip.v
+!i122 1
+L0 40 140
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/workary/dcfifo_try/pllip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/dcfifo_try|C:/intelFPGA_lite/workary/dcfifo_try/pllip.v|
+!i113 1
+R5
+R6
+R7
+vpllip_altpll
+R8
+!i10b 1
+!s100 OnbeZ2bF27?aJ>4a7A^i11
+R1
+Ie>I8^ZkfBJl=>GC<4]dfo0
+R2
+R0
+w1617883247
+8C:/intelFPGA_lite/workary/dcfifo_try/db/pllip_altpll.v
+FC:/intelFPGA_lite/workary/dcfifo_try/db/pllip_altpll.v
+!i122 3
+L0 31 87
+R3
+r1
+!s85 0
+31
+Z9 !s108 1617886302.000000
+!s107 C:/intelFPGA_lite/workary/dcfifo_try/db/pllip_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/dcfifo_try/db|C:/intelFPGA_lite/workary/dcfifo_try/db/pllip_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/workary/dcfifo_try/db
+R7
+vtestbench
+R8
+!i10b 1
+!s100 QG]BY@><1liYdGK;CIcc43
+R1
+IV9JTd_R4ccb?LA[<V6l1W0
+R2
+R0
+w1617886156
+8C:/intelFPGA_lite/workary/dcfifo_try/testbench.v
+FC:/intelFPGA_lite/workary/dcfifo_try/testbench.v
+!i122 4
+L0 2 145
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/workary/dcfifo_try/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/dcfifo_try|C:/intelFPGA_lite/workary/dcfifo_try/testbench.v|
+!i113 1
+R5
+R6
+R7
+vtop
+R8
+!i10b 1
+!s100 2W_SXDmhcb0::3NG;4VkB1
+R1
+ISKa9DF^9Lc3i=_@a<gj_o1
+R2
+R0
+w1617886254
+8C:/intelFPGA_lite/workary/dcfifo_try/top.v
+FC:/intelFPGA_lite/workary/dcfifo_try/top.v
+!i122 2
+L0 1 59
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/workary/dcfifo_try/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/workary/dcfifo_try|C:/intelFPGA_lite/workary/dcfifo_try/top.v|
+!i113 1
+R5
+R6
+R7

@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at testbench.v(26): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/dcfifo_try/testbench.v Line: 26
+Warning (10268): Verilog HDL information at testbench.v(81): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/dcfifo_try/testbench.v Line: 81
+Warning (10268): Verilog HDL information at testbench1.v(26): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/dcfifo_try/testbench1.v Line: 26
+Warning (10268): Verilog HDL information at testbench1.v(81): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/dcfifo_try/testbench1.v Line: 81
