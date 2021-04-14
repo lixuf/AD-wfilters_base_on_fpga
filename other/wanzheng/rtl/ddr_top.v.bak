@@ -1,0 +1,11 @@
+//fifo->ddr_ctrl
+//fifo输入时钟50mhz
+//fifo输出时钟150mhz
+//存满8个数据就读出
+//放入ddr中
+//用full信号做为ddr写请求信号
+
+//ddr_ctrl->fifo
+
+
+module ddr_top(

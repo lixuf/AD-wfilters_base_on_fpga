@@ -1,0 +1,12 @@
+module ddr_ctrl_top(
+ //与ad fifo
+ input fifo_ad_full_flag,
+ output fifo_ad_rreq,
+ input [15:0] fifo_ad_r_data,
+ 
+ //与xb fifo
+ output fifo_xb_rreq,
+ input [15:0] fifo_xb_r_data,
+ input [2:0]fifo_xb_use,
+ input fifo_xb_full
+);

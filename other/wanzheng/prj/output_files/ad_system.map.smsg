@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at ddr_ctrl.v(90): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/wanzheng/prj/ddr_ctrl.v Line: 90
+Warning (10268): Verilog HDL information at clk_manger.v(20): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/workary/wanzheng/rtl/clk_manger.v Line: 20
