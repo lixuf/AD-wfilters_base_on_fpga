@@ -1,0 +1,27 @@
+/*地址产生模块*/
+module addr_fetch(
+   input reset,
+	input clk,
+	
+	input rd_addr_up,//地址自增信号
+	input wr_addr_up,//严格控制 自增时才为1
+	
+ 	output reg [24:0] rd_addr,
+	output reg [24:0] wr_addr,
+	output reg read_en//读使能信号
+);
+//复位
+always @(posedge clk or negedge reset)
+begin 
+ if(~reset)
+ begin 
+  rd_addr<=25'b0;
+  wr_addr<=25'b0;
+  read_en<=1'b0;
+ end
+ else 
+ begin
+  rd_addr<=rd_addr+{22'b0,rd_addr_up&read_en,2'b0};
+  wr_addr<=wr_addr+{22'b0,wr_addr_up,2'b0};
+ end
+end
